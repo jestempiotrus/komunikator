@@ -1,0 +1,7 @@
+Po sklonowaniu repo trzeba zainstalować zależności npm:
+
+npm install
+
+Następnie można już rozpocząć development:
+
+npm run start

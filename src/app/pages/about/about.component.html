@@ -1,0 +1,24 @@
+<body>
+  <div id="naglowek">Czatownik</div>
+  <div id="box">
+    <div id="content">
+    <div id="operation">Logowanie</div>
+    <br>
+    <div id="dane">Username</div>
+    <span class="p-float-label">
+      <input pInputText id="username"[(ngModel)]="haslo"/>
+    </span>
+
+    <div id="dane1">Password</div>
+    <span class="p-float-label">
+      <input pInputText id="username" type="password"/>
+    </span>
+    
+    <div id="footerzaloguj">
+      <div id="pomoc"><a href="#">Nie pamiętasz hasła?</a></div>
+      <div id="buttonz"><p-button label="Login" (click)="zaloguj()"></p-button></div>
+    </div>
+  
+  </div>
+  </div>
+</body>

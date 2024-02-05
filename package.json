@@ -1,0 +1,39 @@
+{
+  "name": "angular-seed",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "17.0.6",
+    "@angular/common": "17.0.6",
+    "@angular/compiler": "17.0.6",
+    "@angular/core": "17.0.6",
+    "@angular/forms": "17.0.6",
+    "@angular/platform-browser": "17.0.6",
+    "@angular/platform-browser-dynamic": "17.0.6",
+    "@angular/router": "17.0.6",
+    "@ngrx/store": "17.0.1",
+    "core-js": "2",
+    "primeicons": "^6.0.1",
+    "primeng": "^17.1.0",
+    "rxjs": "7.8.1",
+    "zone.js": "0.14.2"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --configuration production --output-hashing all",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "17.0.6",
+    "@angular/cli": "17.0.6",
+    "@angular/compiler-cli": "17.0.6",
+    "@angular/language-service": "17.0.6",
+    "@types/node": "20.10.4",
+    "ts-node": "10.9.1",
+    "tslint": "5.20.1",
+    "typescript": "^5.2.0"
+  }
+}
