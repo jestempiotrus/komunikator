@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output  } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-about',
@@ -6,14 +7,20 @@ import { Component, EventEmitter, Output  } from '@angular/core';
 })
 export class AboutComponent {
 
+   constructor(private router: Router) { }
+
   @Output() zalogujclick = new EventEmitter<string>();
   haslo = '';
-  
+
   zaloguj(){
     console.log(this.haslo);
     this.zalogujclick.emit(this.haslo);
+    this.router.navigate(['/chat']);
   }
-  
+
+
+
+
   cards = [
     { 
       title: 'About',

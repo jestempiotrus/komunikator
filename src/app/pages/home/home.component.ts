@@ -8,7 +8,7 @@ export class HomeComponent  {
 
   @Output() zajerestrujclick = new EventEmitter<string>();
   haslo = '';
-  
+
   register(){
     console.log(this.haslo);
     this.zajerestrujclick.emit(this.haslo);

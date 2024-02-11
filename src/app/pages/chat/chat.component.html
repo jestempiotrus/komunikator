@@ -1,12 +1,21 @@
 <body>
-    <div id="container">
-        <div id="rnav"></div>
-        <main>
-            <div id="naglowek">Czatownik</div>
-            <div id="czat">
-            </div>
-        </main>
-        <div id="lnav"></div>
+<div id="container">
+    <div id="rnav"></div>
+    <main>
+        <div id="naglowek">Czatownik</div>
+        <div id="czat">
+            <div *ngFor="let msg of wynik">
+                <div id="wiadomosc">
+                    {{msg['nazwa_uzytkownika']}}:
+                    <div class="wiadomosc">{{msg['wiadomosc']}}<div class="data">{{ msg['data']
+                        *1000 |
+                        date:'dd.MM.yyyy HH:mm:ss' }}</div>
+                    </div>
 
-    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="lnav"></div>
+</div>
 </body>
