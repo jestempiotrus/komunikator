@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { SharedModule } from './shared.module'
 import { UiModule } from './ui/ui.module'
+import { ContextService } from './services/context.service'
 
 const sharedModules = [
     HttpClientModule,
@@ -19,5 +20,9 @@ const sharedModules = [
   exports: [
     ...sharedModules,
   ],
+
+  providers: [
+    ContextService
+  ]
 })
 export class CoreModule { }
