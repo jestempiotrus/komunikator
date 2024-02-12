@@ -16,6 +16,7 @@ export class AboutComponent {
     console.log(this.haslo);
     this.zalogujclick.emit(this.haslo);
     this.router.navigate(['/chat']);
+
   }
 
 
