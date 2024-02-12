@@ -1,10 +1,9 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {NgModule} from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
 
-import { SharedModule } from './shared.module'
-import { UiModule } from './ui/ui.module'
+import {SharedModule} from './shared.module'
+import {UiModule} from './ui/ui.module'
+import {UserDataService} from "./ui/services/userData.service";
 
 const sharedModules = [
     HttpClientModule,
@@ -19,5 +18,8 @@ const sharedModules = [
   exports: [
     ...sharedModules,
   ],
+  providers: [
+    UserDataService
+  ]
 })
 export class CoreModule { }
