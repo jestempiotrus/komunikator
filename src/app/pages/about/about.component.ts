@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent {
 
-   constructor(private router: Router, context: ContextService) { }
+   constructor(private router: Router) { }
 
   @Output() zalogujclick = new EventEmitter<string>();
   haslo = '';
