@@ -1,5 +1,7 @@
 import { Component, EventEmitter, Output  } from '@angular/core';
 import { Router } from '@angular/router';
+import {UserDataService} from "../../core/ui/services/userData.service";
+
 
 @Component({
   selector: 'app-about',
@@ -7,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AboutComponent {
 
-   constructor(private router: Router) { }
+   constructor(private router: Router, public userData: UserDataService) { }
 
   @Output() zalogujclick = new EventEmitter<string>();
   haslo = '';
