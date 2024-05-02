@@ -1,7 +1,19 @@
-Po sklonowaniu repo trzeba zainstalować zależności npm:
+dodanie kolumny haslo
+uzycie md5 szyfrowanie hasla
+metody szyfrowania w php poczytac
+dodac pole powtorz haslo rejestracja
 
-npm install
+skrypt php do obslugi uzytkownika rejestracja
+    sprawdzenie czy pola sa puste
+    sprawdzenie unikalnosci nazwy uzytkownika, wielkosc znakow nie ma znaczenia (Piotr = piotr)
+    sprawdzic czy haslo = powtorzhaslo
+    walidacja nazwy uzytkownika, dozwolone litery i cyfry
+    walidacja hasla dlugosc znaki specjalne
+    ograniczenie dlugosci nazwy uzytkownika
+    dodac uzytkownika do bazy
+    przycisk register wysla do formularza login
 
-Następnie można już rozpocząć development:
+skrypt php logowanie
+    po zalogowaniu utworzenie nowej sesji np md5 i przeslanie jej do przegladarki
 
-npm run start
+

@@ -1,0 +1,28 @@
+<body>
+    <div id="naglowek">Czatownik</div>
+    <p-toast></p-toast>
+    <div id="formregister">
+      <div id="content">
+      <div id="operation">Rejestracja</div>
+      <br>
+      <div id="dane">Username</div>
+      <span class="p-float-label">
+        <input pInputText class="input" [(ngModel)]="nazwa_uzytkownika"/>
+      </span>
+  
+      <div id="dane1">Password</div>
+      <span class="p-float-label">
+        <input pInputText type="password" [(ngModel)]="haslo_uzytkownika" class="input"/>
+            <div id="dane1">Repeat Password</div>
+        <input pInputText type="password" [(ngModel)]="sprawdzenie_hasla" class="input"/>
+      </span>
+      
+      <div id="footerzaloguj">
+        <div id="pomoc"><a href="/login">Masz już konto?</a></div>
+        <div id="buttonz"><p-button label="Register" (click)="wyslij()"></p-button></div>
+
+      </div>
+    </div>
+    </div>
+
+  </body>

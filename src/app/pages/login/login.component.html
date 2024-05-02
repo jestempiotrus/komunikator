@@ -1,22 +1,22 @@
 <body>
   <div id="naglowek">Czatownik</div>
-  <div id="box">
+  <div id="formlogin">
     <div id="content">
     <div id="operation">Logowanie</div>
     <br>
     <div id="dane">Username</div>
     <span class="p-float-label">
-      <input pInputText class="input" [(ngModel)]="haslo"/>
+      <input pInputText class="input" [(ngModel)]="nazwa_uzytkownika"/>
     </span>
 
     <div id="dane1">Password</div>
     <span class="p-float-label">
-      <input pInputText class="input" type="password"/>
+      <input pInputText class="input" type="password" [(ngModel)]="haslo_uzytkownika"/>
     </span>
     
     <div id="footerzaloguj">
-      <div id="pomoc"><a href="#">Nie pamiętasz hasła?</a></div>
-      <div id="buttonz"><p-button label="Login" (click)="zaloguj()"></p-button></div>
+      <div id="pomoc"><a href="/register">Nie pamiętasz hasła?</a></div>
+      <div id="buttonz"><p-button label="Login"  (click)="wyslij()"></p-button></div>
     </div>
 
     Test userData: {{userData.name}}

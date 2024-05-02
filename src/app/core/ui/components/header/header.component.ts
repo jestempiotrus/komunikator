@@ -16,12 +16,12 @@ export class HeaderComponent {
       {
         label: 'Logowanie',
         icon: 'pi pi-fw pi-file',
-        routerLink: 'about',
+        routerLink: 'login',
       },
       {
         label: 'Rejestracja',
         icon: 'pi pi-fw pi-file',
-        routerLink: 'home',
+        routerLink: 'register',
       },
       {
         label: 'Chat',

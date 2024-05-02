@@ -2,8 +2,8 @@ export const uiConfig = {
   title: 'Angular Seed',
   fluid: true,
   links: [
-    { label: 'Home', icon: 'fa fa-home', link: ['/', 'home'] },
-    { label: 'About', icon: 'fa fa-info', link: ['/', 'about'] },
+    { label: 'Register', icon: 'fa fa-register', link: ['/', 'register'] },
+    { label: 'Login', icon: 'fa fa-info', link: ['/', 'login'] },
     { label: 'Chat', icon: 'fa fa-info', link: ['/', 'chat'] },
   ],
 }

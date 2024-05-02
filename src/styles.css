@@ -22,10 +22,10 @@ body{
     display: block;
     margin: auto;
 }
-#box{
+#formlogin{ó
     background-color: white;
     width: 15%;
-    height: 38%;
+    height: 45%;
     border-color:blue;
     border-width: 1px;
     border-style: solid;
@@ -34,7 +34,21 @@ body{
     margin: auto;
     margin-top: 4%;
     margin-bottom: 4%;
-    min-width: 500px;
+    min-width: 550px;
+}
+#formregister{
+    background-color: white;
+    width: 15%;
+    height: 50%;
+    border-color:blue;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2%;
+    box-shadow: 0 0 10px 0px rgb(101, 93, 93);
+    margin: auto;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    min-width: 550px;
 }
 #rnav{
     width: 20%;
@@ -94,7 +108,7 @@ main{
     margin-top: 10px;
     width: 80%;
     height: 7%;
-    
+    margin-botttom:10px;
 }
 #dane{
     color: rgb(38, 38, 100);
